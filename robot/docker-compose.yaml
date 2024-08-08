@@ -1,0 +1,8 @@
+services:
+  ros:
+    build:
+      context: ../
+      dockerfile: simulator/Dockerfile
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ros2 -h
